@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+        <title>Report</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <h1>Project's Report</h1>
+    
+    <body>
+        <div>
+           
+        &nbsp;&nbsp; This week we had to add some more functionalities to our first web application </br> 
+        -the currency converter and build it again using servlets. </br> </br>
+        
+        &nbsp;&nbsp; Actually we had to add a button that would redirect to a page that provides </br> 
+        the report of our project and one more button that would let download the source code. </br>
+        The basic functionality of the conversion of the requested amount to another currency </br> 
+        is done in the conv.java file by requesting and getting  the live currencies from Google.</br>
+        After getting the google response I parse it in order to generate a string that is the result</br> 
+        and I redirect it to the convRes.jsp page that shows it to the user. </br></br>
+        &nbsp;&nbsp;The functionality of downloading the source code by clicking the appropriate </br> 
+        button is done in the srcServlet.java file and follows exactly the instructions represented </br>
+        in Chapter 4 of the book (Head First Servlets and JSP,2nd Edition),page 163.</br></br>
+        &nbsp;&nbsp;The other button- the report button redirects the user to a page that represents </br> 
+        the report(way of implementation) of the project. This was requested to be done using Listener.</br> 
+        It is done in repCtxListener.java repServlet.java myRep.java(attribute class) files </br> 
+        while  accessing the web-apps context parameter, where the link to this report.html page is defined.</br>
+        </div>
+    </body>
+</html>

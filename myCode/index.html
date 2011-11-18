@@ -1,0 +1,181 @@
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Marilena's Currency Converter</title>
+
+
+</head>
+
+<body>
+
+<center>
+<h1> texWWW Project 1</h1>
+<h2> Currency Converter</h2>
+</center>
+
+
+
+<form method="get" action="conv">
+
+<div>
+From:
+<select name="from-currency">
+<option value="EUR">Euro</option>
+<option value="USD">US Dollar</option>
+
+<option value="AED"> United Arab Emirates Dirham </option>
+<option value="ARS">Argentine Peso</option>
+<option value="AUD">Australian Dollar</option>
+<option value="BGN">Bulgarian Lev</option>
+<option value="BND">Brunei Dollar</option>
+<option value="BOB">Bolivian Boliviano</option>
+<option value="BRL">Brazilian Real</option>
+<option value="CAD">Canadian Dollar</option>
+<option value="CHF">Swiss Franc</option>
+<option value="CLP">Chilean Peso</option>
+<option value="CNY">Chinese Yuan Renminbi</option>
+<option value="COP">Colombian Peso</option>
+<option value="CZK">Czech Republic Koruna</option>
+<option value="DKK">Danish Krone</option>
+<option value="EGP">Egyptian Pound</option>
+<option value="FJD">Fijian Dollar</option>
+<option value="GBP">British Pound Sterling</option>
+<option value="HKD">Hong Kong Dollar</option>
+<option value="HRK">Croatian Kuna</option>
+<option value="HUF">Hungarian Forint</option>
+<option value="IDR">Indonesian Rupiah</option>
+<option value="ILS">Israeli New Sheqel</option>
+<option value="INR">Indian Rupee</option>
+<option value="JPY">Japanese Yen</option>
+<option value="KES">Kenyan Shilling</option>
+<option value="KRW">South Korean Won</option>
+<option value="LTL">Lithuanian Litas</option>
+<option value="MAD">Moroccan Dirham</option>
+<option value="MXN">Mexican Peso</option>
+<option value="MYR">Malaysian Ringgit</option>
+<option value="NOK">Norwegian Krone</option>
+<option value="NZD">New Zealand Dollar</option>
+<option value="PEN">Peruvian Nuevo Sol</option>
+<option value="PHP">Philippine Peso</option>
+<option value="PKR">Pakistani Rupee</option>
+<option value="PLN">Polish Zloty</option>
+<option value="RON">Romanian Leu</option>
+<option value="RSD">Serbian Dinar</option>
+<option value="RUB">Russian Ruble</option>
+<option value="SAR">Saudi Riyal</option>
+<option value="SEK">Swedish Krona</option>
+<option value="SGD">Singapore Dollar</option>
+<option value="THB">Thai Baht</option>
+<option value="TRY">Turkish Lira</option>
+<option value="TWD">New Taiwan Dollar</option>
+<option value="UAH">Ukrainian Hryvnia</option>
+<option value="VEF">Venezuelan Bol�var Fuerte</option>
+<option value="VND">Vietnamese Dong</option>
+<option value="ZAR">South African Ran</option>        
+</select>
+</div>
+
+<p>&nbsp;</p> 
+
+<div>
+    
+To    :   
+<select name="to-currency">
+<option value="USD">US Dollar</option>
+<option value="EUR">Euro</option>
+
+<option value="AED"> United Arab Emirates Dirham </option>
+<option value="ARS">Argentine Peso</option>
+<option value="AUD">Australian Dollar</option>
+<option value="BGN">Bulgarian Lev</option>
+<option value="BND">Brunei Dollar</option>
+<option value="BOB">Bolivian Boliviano</option>
+<option value="BRL">Brazilian Real</option>
+<option value="CAD">Canadian Dollar</option>
+<option value="CHF">Swiss Franc</option>
+<option value="CLP">Chilean Peso</option>
+<option value="CNY">Chinese Yuan Renminbi</option>
+<option value="COP">Colombian Peso</option>
+<option value="CZK">Czech Republic Koruna</option>
+<option value="DKK">Danish Krone</option>
+<option value="EGP">Egyptian Pound</option>
+<option value="FJD">Fijian Dollar</option>
+<option value="GBP">British Pound Sterling</option>
+<option value="HKD">Hong Kong Dollar</option>
+<option value="HRK">Croatian Kuna</option>
+<option value="HUF">Hungarian Forint</option>
+<option value="IDR">Indonesian Rupiah</option>
+<option value="ILS">Israeli New Sheqel</option>
+<option value="INR">Indian Rupee</option>
+<option value="JPY">Japanese Yen</option>
+<option value="KES">Kenyan Shilling</option>
+<option value="KRW">South Korean Won</option>
+<option value="LTL">Lithuanian Litas</option>
+<option value="MAD">Moroccan Dirham</option>
+<option value="MXN">Mexican Peso</option>
+<option value="MYR">Malaysian Ringgit</option>
+<option value="NOK">Norwegian Krone</option>
+<option value="NZD">New Zealand Dollar</option>
+<option value="PEN">Peruvian Nuevo Sol</option>
+<option value="PHP">Philippine Peso</option>
+<option value="PKR">Pakistani Rupee</option>
+<option value="PLN">Polish Zloty</option>
+<option value="RON">Romanian Leu</option>
+<option value="RSD">Serbian Dinar</option>
+<option value="RUB">Russian Ruble</option>
+<option value="SAR">Saudi Riyal</option>
+<option value="SEK">Swedish Krona</option>
+<option value="SGD">Singapore Dollar</option>
+<option value="THB">Thai Baht</option>
+<option value="TRY">Turkish Lira</option>
+<option value="TWD">New Taiwan Dollar</option>
+<option value="UAH">Ukrainian Hryvnia</option>
+<option value="VEF">Venezuelan Bol�var Fuerte</option>
+<option value="VND">Vietnamese Dong</option>
+<option value="ZAR">South African Ran</option> 
+</select>
+</div>
+
+<p>&nbsp;</p> 
+
+<div>
+<label for="name">Amount: </label>
+<input type="text" name="amount"/>
+</div>
+
+<p>&nbsp;</p> 
+
+<div>
+    <input type="submit" value="Submit" onclick="conv" />
+</div>
+    
+</form>
+
+<p>&nbsp;</p> 
+
+<h3>For more info: </h3>
+
+<form method="get" action="repServlet">
+ 
+<div>
+<input type="submit" value="Report" onclick="repServlet" />
+</div>
+    
+</form>
+
+<form method="get" action=" http://texwww.inf.uth.gr:8080/~mapapage/myCode.tar">
+    
+<div>
+<input type="submit" value="SourceCode" onclick="SrcServlet" />
+</div>
+    
+</form>
+
+
+<br><br>
+
+</body>
+</html>
+
+

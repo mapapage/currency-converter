@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <context-param>
+        <param-name>link</param-name>
+        <param-value>report.html</param-value>
+    </context-param>
+    <listener>
+        <description>ServletContextListener</description>
+        <listener-class>repCtxListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>srcServlet</servlet-name>
+        <servlet-class>srcServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>conv</servlet-name>
+        <servlet-class>conv</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>repServlet</servlet-name>
+        <servlet-class>repServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>srcServlet</servlet-name>
+        <url-pattern>/srcServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>conv</servlet-name>
+        <url-pattern>/conv</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>repServlet</servlet-name>
+        <url-pattern>/repServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
